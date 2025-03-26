@@ -1,0 +1,131 @@
+/* Main App Styling */
+
+QWidget {
+    background-color: rgb(54, 54, 54);
+    color: rgb(211, 211, 211);
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Button Styling */
+
+QPushButton {
+    background: transparent;
+    border: none;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    border-radius: 2px;
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgb(20, 20, 20);
+}
+
+QPushButton:pressed {
+    background-color: rgb(54, 54, 54);
+}
+
+/* Text Input Styling */
+
+QLineEdit {
+    background-color: rgb(64, 64, 64);
+    color: rgb(211, 211, 211);
+    border: 1px solid rgb(20, 20, 20);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgb(76, 124, 194); /* Blue border on focus */
+}
+
+/* File Browser Styling */
+
+QTreeWidget {
+    color: rgb(211, 211, 211);
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 2px;
+}
+
+QHeaderView::section {
+    font-weight: bold;
+    background-color: rgb(54, 54, 54);
+    border-bottom: 1px solid rgb(20, 20, 20);
+    border-top: none;
+    border-right: 1px solid rgb(20, 20, 20);
+    border-left: none;
+    padding-left: 10px;
+    height: 27px;
+}
+
+QHeaderView::section:last {
+    border-right: none;
+}
+
+QTreeWidget::item {
+    padding: 4px;
+}
+
+/* QMenu */
+
+QMenu {
+    background-color: rgb(64, 64, 64);
+    color: rgb(211, 211, 211);
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 2px;
+}
+
+QMenu::item {
+    padding: 8px 20px;
+}
+
+QMenu::item:selected {
+    color: white;
+    background-color: rgb(76, 124, 194);
+}
+
+QMenu::item:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+/* Scrollbar Styling */
+
+
+QScrollBar {
+    background-color: rgb(54, 54, 54);
+    border-left: 1px solid rgb(20, 20, 20);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+QScrollBar::handle {
+    background-color: rgb(80, 80, 80);
+    border-radius: 2px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical,
+QScrollBar::left-arrow:horizontal,
+QScrollBar::right-arrow:horizontal {
+    background: none;
+}
+
+
+/* Tooltip Styling */
+
+QToolTip {
+    color: rgb(211, 211, 211);
+    background-color: rgb(54, 54, 54);
+    border: 1px solid rgb(20, 20, 20);
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 2px;
+}
